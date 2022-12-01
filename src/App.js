@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { RouterProvider } from 'react-router-dom';
-import coverimg from './images/cover/cover.jpg'
-import { WebRouter } from './Rout/Rout';
+import { portfolioRouter } from './Components/Router/Route';
 
 function App() {
   return (
     <div className="App ">
-      <RouterProvider router={WebRouter}>
+      <RouterProvider router={portfolioRouter}>
 
       </RouterProvider>
     </div>

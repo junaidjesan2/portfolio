@@ -1,9 +1,0 @@
-.div1{
-    height: 500px;position:relative;
-}
-.div2{
-    max-height:50%;overflow:auto;border:1px solid red;
-}
-.div3{
-    height:200px;border:5px solid yellow;
-}
