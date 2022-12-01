@@ -20,12 +20,12 @@ const Header = () => {
                             <li><Link to='/resume'><BsFileEarmarkPdf /> Resume</Link></li>
                             {/* <li><Link to='/portfolio'><BsFillFileEarmarkPersonFill/> Portfolio</Link></li> */}
                             <li><Link to='/services'><CgDatabase /> services</Link></li>
-                            <li><Link to='/contact'><AiOutlineMail /> contact</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center">
+                <div className="navbar-center grid grid-cols-1">
                     <span className="font-semibold normal-case text-xl">Junaid Ahamed Jesan</span>
+                    <span className="font-semibold normal-case text-xs">junaidjisan782@gmail</span>
                 </div>
                 <div className="navbar-end">
                     <div className="dropdown dropdown-end">

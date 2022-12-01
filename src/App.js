@@ -5,7 +5,7 @@ import Layouts from './Components/Layout/Layouts';
 import About from './Components/Pages/About/About';
 import Home from './Components/Pages/Home/Home';
 import Resume from './Components/Pages/Resume/Resume';
-import image from './images/junaid/316826626_1202297204054161_298509763537578578_n.jpg'
+import Services from './Components/Pages/Services/Services';
 
 const portfolioRouter=createBrowserRouter([
   {
@@ -23,6 +23,10 @@ const portfolioRouter=createBrowserRouter([
       {
         path:'/resume',
         element:<Resume></Resume>
+      },
+      {
+        path:'/services',
+        element:<Services></Services>
       }
     ]
   }
