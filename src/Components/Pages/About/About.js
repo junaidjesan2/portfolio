@@ -9,7 +9,7 @@ const About = () => {
                 <hr className='w-28 ' />
             </div>
             <div>
-                <h1 className='text-justify md:px-3 lg:px-8'>I am Junaid Ahamed Jesan a Frontend Developer or Web Developer. I'm so foodie person, i love to eat food and my hobbies are Skiing, Dibing, Sleeping, Astrography, Skydiving. I love to enjoy my life with my Parents Friends and Relatives. i love my mother most like what i did or what i am doing all this is only for my mother happiness. And my last massage for all is <strong>Bepar Na</strong>.</h1>
+                <h1 className='text-justify md:px-3 lg:px-8'>I am Junaid Ahamed Jesan a Frontend Developer or Web Developer. I'm so foodie person, i love to eat food and my hobbies are Skiing, Diving, Sleeping, Astrography, Skydiving. I love to enjoy my life with my Parents Friends and Relatives. i love my mother most like whatever i did or whatever i am doing all of this is only for my mother's happiness. And my last massage for all is <strong>Bepar Na</strong>.</h1>
             </div>
             <div className='md:flex mx-auto gap-12 mt-10'>
                 <div className='w-full md:w-1/3'>
