@@ -5,11 +5,11 @@ import { Outlet } from 'react-router-dom';
 
 const Layouts = () => {
     return (
-        <div className='mx-auto'>
+        <div className='mx-auto '>
             <div>
                 <Header></Header>
             </div>
-            <div className='w-screen h-screen mx-auto px-8 mt-5 bg-cover'>
+            <div className='w-5/6  py-10 min-h-screen mx-auto px-8 bg-cover '>
                 <Outlet></Outlet>
             </div>
         </div>

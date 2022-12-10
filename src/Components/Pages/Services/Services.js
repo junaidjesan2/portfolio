@@ -10,13 +10,13 @@ import { SiJavascript, SiRedux, SiTailwindcss } from 'react-icons/si';
 const Services = () => {
     return (
         <div>
-            <div className=''>
-                <h1 className='text-3xl flex items-center text-start bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-500 text-purple-800 font-semibold'><CgDatabase /> Services</h1>
+            <div className='py-10 px-10 bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-500 text-purple-800 rounded-xl'>
+                <h1 className='text-3xl flex items-center text-start  font-semibold'><CgDatabase /> Services</h1>
                 <hr className='w-28 ' />
             </div>
             <div>
                 <h1 className='text-2xl font-semibold text-blue-600 text-start mt-3'>Frontend Development / Web Development <samp className='text-xs'>With</samp></h1>
-                <div className='lg:flex grid grid-cols-1 gap-6 items-start'>
+                <div className=' grid grid-cols-1 gap-6 items-start'>
                     <h1 className='flex items-center gap-2'><AiOutlineHtml5 /> HTML5</h1>
                     <div className='flex gap-3 items-start'>
                         <h1 className='flex items-center gap-2'><DiCss3Full /> Css3</h1>

@@ -6,6 +6,7 @@ import About from './Components/Pages/About/About';
 import Home from './Components/Pages/Home/Home';
 import Resume from './Components/Pages/Resume/Resume';
 import Services from './Components/Pages/Services/Services';
+import image from './images/cover/background3.jpg'
 
 const portfolioRouter=createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const portfolioRouter=createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <div className="App rounded-3xl mx-5 lg:mx-20 glass bg-slate-500">
       <RouterProvider router={portfolioRouter}></RouterProvider>
     </div>
   );

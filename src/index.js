@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import image from './images/cover/background3.jpg'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div className='lg:py-20 py-5 min-h-screen' style={{ backgroundImage: `url("${image}")` }}>
     <App />
+    </div>
   </React.StrictMode>
 );
 

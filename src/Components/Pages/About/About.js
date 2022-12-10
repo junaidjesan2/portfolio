@@ -1,19 +1,21 @@
 import React from 'react';
-import image from '../../../images/junaid/316826626_1202297204054161_298509763537578578_n.jpg'
+import image from '../../../images/junaid/junaid5.jpg'
 
 const About = () => {
     return (
         <div className='mb-5'>
+            <div className='rounded-xl bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-500 text-purple-800 py-10 px-10'>
             <div>
-                <h1 className='text-3xl text-start bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-500 text-purple-800 font-semibold'>About</h1>
+                <h1 className='text-3xl text-start font-semibold'>About</h1>
                 <hr className='w-28 ' />
             </div>
             <div>
-                <h1 className='text-justify md:px-3 lg:px-8'>I am Junaid Ahamed Jesan a Frontend Developer or Web Developer. I'm so foodie person, i love to eat food and my hobbies are Skiing, Diving, Sleeping, Astrography, Skydiving. I love to enjoy my life with my Parents Friends and Relatives. i love my mother most like whatever i did or whatever i am doing all of this is only for my mother's happiness. And my last massage for all is <strong>Bepar Na</strong>.</h1>
+                <h1 className='text-justify md:px-3 lg:px-8'>I am Junaid Ahamed Jesan an Ambivert person. Basically i am a Frontend Developer or Web Developer whatever you say. I'm so foodie person, i love to eat food and my hobbies are Skiing, Diving, Sleeping, Astrography, Skydiving. I love to enjoy my life with my Parents Friends and Relatives. i love my mother most like whatever i have done or whatever i am doing all of this is only for my mother's happiness. And my last massage for all is <strong>Bepar Na</strong>.</h1>
+            </div>
             </div>
             <div className='md:flex mx-auto gap-12 mt-10'>
                 <div className='w-full md:w-1/3'>
-                    <img src={image} className='rounded-lg' alt="" />
+                    <img src={image} className='rounded-full hover:border-4 ' alt="" />
                 </div>
                 <div className='w-full md:w-2/3'>
                     <h1 className='text-2xl font-semibold text-blue-600'>Web Developer / Frontend Developer</h1>
