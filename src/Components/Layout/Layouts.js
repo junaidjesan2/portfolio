@@ -6,25 +6,18 @@ import Footer from '../Pages/Footer/Footer';
 
 const Layouts = () => {
     return (
-            <motion.div
-                initial={{ scale: 0 }}
-                animate={{ rotate: 360, scale: 1 }}
-                transition={{
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 20
-                }}
+            <div
                 className='mx-auto'>
                 <div>
                     <Header></Header>
                 </div>
-                <div className='w-5/6  py-10 min-h-screen mx-auto px-8 bg-cover '>
+                <div className='w-5/6 py-10 min-h-screen mx-auto px-8 bg-cover '>
                     <Outlet></Outlet>
                 </div>
                 <div className='glass'>
                     <Footer></Footer>
                 </div>
-            </motion.div>
+            </div>
     );
 };
 

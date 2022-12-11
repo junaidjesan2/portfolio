@@ -2,10 +2,9 @@ import React from 'react';
 import { BsDownload, BsFileEarmarkPdf, BsPerson } from 'react-icons/bs'
 import { AiOutlineHome } from 'react-icons/ai'
 import { CgDatabase } from 'react-icons/cg'
-import { GrContact } from 'react-icons/gr'
+import { MdOutlineEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom';
 import resume from '../../../images/resume/Resume-Junaid_Ahamed_Jesan.pdf'
-import jsPDF from 'jspdf';
 
 const Header = () => {
     const handleResumeDownload=()=>{
@@ -21,7 +20,7 @@ const Header = () => {
     }
     return (
         <div className='rounded-3xl' data-aos="zoom-in">
-            <div className="flex justify-around h-32 items-center py-auto glass rounded-3xl pb-5 ">
+            <div className="flex bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-500 text-purple-800 justify-around h-32 items-center py-auto glass rounded-3xl pb-5 ">
                 <div className="">
                     <div className="dropdown text-pink-500">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -33,7 +32,7 @@ const Header = () => {
                             <li><Link to='/resume'><BsFileEarmarkPdf /> Resume</Link></li>
                             {/* <li><Link to='/portfolio'><BsFillFileEarmarkPersonFill/> Portfolio</Link></li> */}
                             <li><Link to='/services'><CgDatabase /> services</Link></li>
-                            <li><Link to='/contact'><GrContact /> Contact</Link></li>
+                            <li><Link to='/contact'><MdOutlineEmail /> Contact</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +41,7 @@ const Header = () => {
                     <span className="font-semibold normal-case text-xs">junaidjisan782@gmail</span>
                 </div>
                 <div className=''>
-                    <button onClick={handleResumeDownload} className='flex hover:text-pink-500 items-center gap-5 mx-auto'>
+                    <button onClick={handleResumeDownload} className='flex hover:text-pink-500 items-center gap-2 lg:gap-5 mx-auto'>
                         <BsDownload className='' /> <h1>Resume</h1>
                     </button>
                 </div>
