@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Layouts from './Components/Layout/Layouts';
 import About from './Components/Pages/About/About';
+import Contact from './Components/Pages/Contact/Contact';
 import Home from './Components/Pages/Home/Home';
 import Resume from './Components/Pages/Resume/Resume';
 import Services from './Components/Pages/Services/Services';
@@ -28,6 +29,10 @@ const portfolioRouter=createBrowserRouter([
       {
         path:'/services',
         element:<Services></Services>
+      },
+      {
+        path:'/contact',
+        element:<Contact></Contact>
       }
     ]
   }

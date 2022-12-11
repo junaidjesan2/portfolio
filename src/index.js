@@ -8,7 +8,7 @@ import image from './images/cover/background3.jpg'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='lg:py-20 py-5 min-h-screen' style={{ backgroundImage: `url("${image}")` }}>
+    <div className='lg:py-20 py-5 bg-fixed min-h-screen' style={{ backgroundImage: `url("${image}")` }}>
     <App />
     </div>
   </React.StrictMode>
