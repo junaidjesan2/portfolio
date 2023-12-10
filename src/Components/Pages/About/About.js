@@ -19,7 +19,7 @@ const About = () => {
             <motion.div 
             drag
             dragConstraints={constraintsRef}
-            className='text-justify md:px-3 lg:px-8'>I am Junaid Ahamed Jesan an Ambivert person. Basically i am a Frontend Developer or Web Developer whatever you say. I'm so foodie person, i love to eat food and my hobbies are Skiing, Diving, Sleeping, Astrography, Skydiving. I love to enjoy my life with my Parents Friends and Relatives. i love my mother most like whatever i have done or whatever i am doing all of this is only for my mother's happiness. And my last massage for all is <strong>Bepar Na</strong>.</motion.div>
+            className='text-justify md:px-3 lg:px-8'>I am Junaid Ahamed Jesan an Ambivert person. Basically i am a Frontend Developer. I'm so foodie person, i love to eat food and my hobbies are Skiing, Diving, Sleeping, Astrography, Skydiving. I love to enjoy my life with my Parents Friends and Relatives. i love my mother most like whatever i have done or whatever i am doing all of this is only for my mother's happiness. And my last massage for all is <strong>Bepar Na</strong>.</motion.div>
             </motion.div>
             </div>
             <div className='md:flex mx-auto gap-12 mt-10'>
@@ -44,7 +44,7 @@ const About = () => {
                         </div>
                         <div>
                             <h1><strong>age:</strong> 21y</h1>
-                            <h1><strong>Degree:</strong> B.Sc in Chemistry (ongoing)</h1>
+                            <h1><strong>Degree:</strong> B.Sc in Software Development (ongoing)</h1>
                             <h1><strong>Freelance:</strong> Available</h1>
                             <h1><strong>Relationship status:</strong> <span className='bg-red-500 px-2'>Single</span></h1>
                         </div>

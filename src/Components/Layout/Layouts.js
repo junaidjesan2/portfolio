@@ -11,7 +11,7 @@ const Layouts = () => {
                 <div>
                     <Header></Header>
                 </div>
-                <div className='w-5/6 py-10 min-h-screen mx-auto px-8 bg-cover '>
+                <div className='py-10 min-h-screen px-8 bg-cover '>
                     <Outlet></Outlet>
                 </div>
                 <div className='glass'>

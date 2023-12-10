@@ -41,7 +41,7 @@ const portfolioRouter=createBrowserRouter([
 
 function App() {
   return (
-    <div className="App rounded-3xl mx-5 lg:mx-20 glass bg-slate-500">
+    <div className="App glass bg-slate-500">
       <RouterProvider router={portfolioRouter}></RouterProvider>
       <Toaster></Toaster>
     </div>
