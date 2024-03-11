@@ -27,7 +27,6 @@ const Header = () => {
         </div>
         <div className="">
           <button
-          
             onClick={handleResumeDownload}
             className="flex hover:text-pink-500 items-center gap-2 lg:gap-5 mx-auto"
           >
