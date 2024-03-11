@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="" data-aos="zoom-in">
       <div className="flex items-center md:justify-around justify-between py-5">
-        <div className="flex flex-col w-80">
+        <div className="flex flex-col md:w-80 w-72">
           <TypeAnimation
             sequence={[
               "Junaid",

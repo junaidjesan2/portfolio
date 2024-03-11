@@ -22,10 +22,10 @@ const Services = () => {
   return (
     <div className="  my-20">
       <div className=" sticky top-3 py-5">
-        <h1 className="text-3xl flex gap8 items-center text-start  font-semibold">
-          <CgDatabase /> Services
+        <h1 className="md:text-3xl text-xl flex gap-3 items-center text-start font-semibold">
+          Services
         </h1>
-        <hr className="w-28 " />
+        <hr className="md:w-28 w-16" />
       </div>
       <div className="w-1/2 mx-auto">
         <div className=" grid grid-cols-1 gap-6 items-start">

@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <div className="min-h-screen">
-        <h1 className="lg:text-start text-4xl lg:ml-32 flex mx-auto items-center">
+        <h1 className="lg:text-start md:text-4xl text-2xl lg:ml-32 flex mx-auto items-center">
           Frontend Developer / Web Developer
         </h1>
         <div>

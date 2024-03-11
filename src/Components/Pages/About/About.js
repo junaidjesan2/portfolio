@@ -7,13 +7,15 @@ import { useRef } from "react";
 const About = () => {
   const constraintsRef = useRef(null);
   return (
-    <div className="mb-5 h-screen">
+    <div className="mb-5 min-h-screen">
       <div className="sticky top-3 py-8">
-        <h1 className="text-3xl text-start font-semibold ">About</h1>
-        <hr className="w-28 " />
+        <h1 className="md:text-3xl text-xl flex gap-3 items-center text-start font-semibold">
+          About
+        </h1>
+        <hr className="md:w-28 w-16" />
       </div>
-      <motion.div ref={constraintsRef}>
-        <motion.div
+      <div ref={constraintsRef}>
+        <div
           drag
           dragConstraints={constraintsRef}
           className="text-justify md:px-3 lg:px-8 ml-28 md:ml-0"
@@ -25,10 +27,10 @@ const About = () => {
           whatever i have done or whatever i am doing all of this is only for my
           mother's happiness. And my last massage for all is{" "}
           <strong>Bepar Na</strong>.
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
       <div className="md:flex mx-auto gap-12 mt-10">
-        <motion.div
+        {/* <motion.div
           whileHover={{ scale: 1.2, rotate: 90 }}
           whileTap={{
             scale: 0.8,
@@ -38,12 +40,11 @@ const About = () => {
           className="w-full md:w-1/3"
         >
           <img
-            data-aos="zoom-in"
             src={image}
-            className="rounded-full hover:border-4 "
+            className="rounded-full"
             alt=""
           />
-        </motion.div>
+        </motion.div> */}
         <div className="w-full md:w-2/3">
           <h1 className="text-2xl font-semibold text-blue-600">
             Web Developer / Frontend Developer

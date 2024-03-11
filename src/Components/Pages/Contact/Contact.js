@@ -30,13 +30,15 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="h-screen">
-        <div className="sticky top-3 my-8">
-          <h1 className="text-3xl text-start font-semibold ">Contact</h1>
-          <hr className="w-28 " />
+      <div className="min-h-screen">
+        <div className="sticky top-3 py-5">
+          <h1 className="md:text-3xl text-xl flex gap-3 items-center text-start font-semibold">
+            Contact
+          </h1>
+          <hr className="md:w-28 w-16" />
         </div>
-        <div className="flex items-center gap-10 mt-32">
-          <form onSubmit={sendEmail} ref={form} className="w-1/2">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-10 my-10 md:mt-32">
+          <form onSubmit={sendEmail} ref={form} className="md:w-1/2 w-full">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -76,8 +78,8 @@ const Contact = () => {
               </button>
             </div>
           </form>
-          <div className="w-1/2">
-            <img src={cover} />
+          <div className="md:w-1/2">
+            <img src={cover}  className="w-full h-full"/>
           </div>
         </div>
       </div>
