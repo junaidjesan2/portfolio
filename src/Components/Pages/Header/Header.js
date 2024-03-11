@@ -1,6 +1,7 @@
 import React from "react";
 import { BsDownload } from "react-icons/bs";
 import resume from "../../../images/resume/Resume-Junaid_Ahamed_Jesan.pdf";
+import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
   const handleResumeDownload = () => {
@@ -17,10 +18,26 @@ const Header = () => {
   return (
     <div className="" data-aos="zoom-in">
       <div className="flex items-center md:justify-around justify-between py-5">
-        <div className="navbar-center grid grid-cols-1">
-          <span className="font-semibold normal-case text-xs md:text-xl">
-            Junaid Ahamed Jesan
-          </span>
+        <div className="flex flex-col w-80">
+          <TypeAnimation
+            sequence={[
+              "Junaid",
+              500,
+              "Junaid Ahamed", //  Continuing previous Text
+              500,
+              "Junaid Ahamed Jesan",
+              500,
+              "Junaid Aham",
+              500,
+              "Junaid",
+              500,
+              "",
+              500,
+            ]}
+            speed={50}
+            style={{ fontSize: "2em" }}
+            repeat={Infinity}
+          />
           <span className="font-semibold normal-case text-xs md:text-xs">
             junaidjesan2@gmail.com
           </span>

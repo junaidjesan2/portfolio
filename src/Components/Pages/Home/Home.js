@@ -23,15 +23,17 @@ const Home = () => {
           Frontend Developer / Web Developer
         </h1>
         <div>
-          <div className="slider-container w-2/4 mx-auto my-20">
-            <Slider {...settings} className="">
+          <div className="slider-container md:w-2/4 mx-auto md:my-20">
+            <Slider {...settings} className="wrap">
               {Projects.map((data) => (
                 <>
-                  <div className="m-4" key={data.id}>
-                    <p className="text-2xl font-semibold text-center align-middle">
+                <div className="mx-5">
+
+                  <div className="md:m-4 my-10" key={data.id}>
+                    <p className="md:text-2xl text-lg font-semibold text-center align-middle">
                       {data.name}
                     </p>
-                    <div className="flex justify-around items-center mt-5 ">
+                    <div className="flex justify-around gap-3 items-center mt-5 ">
                       <a href={data.github}>
                         <FaGithubAlt />
                       </a>
@@ -42,6 +44,7 @@ const Home = () => {
                       )}
                     </div>
                   </div>
+                </div>
                 </>
               ))}
             </Slider>
