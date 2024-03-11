@@ -3,8 +3,9 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaLink, FaRegShareSquare } from "react-icons/fa";
+import { FaGithubAlt } from "react-icons/fa";
 import Projects from "../../../data/data";
+import { MdLiveTv } from "react-icons/md";
 
 const Home = () => {
   const settings = {
@@ -13,7 +14,7 @@ const Home = () => {
     infinite: true,
     centerPadding: "60px",
     slidesToShow: 3,
-    speed: 500,
+    speed: 400,
   };
   return (
     <>
@@ -23,26 +24,26 @@ const Home = () => {
         </h1>
         <div>
           <div className="slider-container w-2/4 mx-auto my-20">
-            <Slider {...settings}>
-            {Projects.map((data) => (
-                    <>
-                      <div className="m-4" key={data.id}>
-                        <p className="text-2xl font-semibold text-center align-middle">
-                          {data.name}
-                        </p>
-                        <div className="flex justify-around mt-5">
-                          <a href={data.github}>
-                            <FaRegShareSquare />
-                          </a>
-                          {data.liveLink != "" && (
-                            <a href={data.liveLink}>
-                              <FaLink />
-                            </a>
-                          )}
-                        </div>
-                      </div>
-                    </>
-                  ))}
+            <Slider {...settings} className="">
+              {Projects.map((data) => (
+                <>
+                  <div className="m-4" key={data.id}>
+                    <p className="text-2xl font-semibold text-center align-middle">
+                      {data.name}
+                    </p>
+                    <div className="flex justify-around items-center mt-5 ">
+                      <a href={data.github}>
+                        <FaGithubAlt />
+                      </a>
+                      {data.liveLink != "" && (
+                        <a href={data.liveLink}>
+                          <MdLiveTv />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </>
+              ))}
             </Slider>
           </div>
         </div>
