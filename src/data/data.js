@@ -45,7 +45,7 @@ const Projects = [
     id: 8,
     name: "Advance Filtering",
     github: "https://github.com/junaidjesan2/advance-filtering",
-    liveLink: "",
+    liveLink: "https://ecommerce-filter2.netlify.app/",
   },
 ];
 
