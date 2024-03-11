@@ -1,9 +1,5 @@
 import React from "react";
-import { BsDownload, BsFileEarmarkPdf, BsPerson } from "react-icons/bs";
-import { AiOutlineHome } from "react-icons/ai";
-import { CgDatabase } from "react-icons/cg";
-import { MdOutlineEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { BsDownload } from "react-icons/bs";
 import resume from "../../../images/resume/Resume-Junaid_Ahamed_Jesan.pdf";
 
 const Header = () => {
@@ -26,11 +22,12 @@ const Header = () => {
             Junaid Ahamed Jesan
           </span>
           <span className="font-semibold normal-case text-xs md:text-xs">
-            junaidjisan782@gmail
+            junaidjesan2@gmail.com
           </span>
         </div>
-        <div className="sticky top-0">
+        <div className="">
           <button
+          
             onClick={handleResumeDownload}
             className="flex hover:text-pink-500 items-center gap-2 lg:gap-5 mx-auto"
           >

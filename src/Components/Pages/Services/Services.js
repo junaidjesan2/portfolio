@@ -6,26 +6,28 @@ import {
 } from "react-icons/ai";
 import { BsBootstrap } from "react-icons/bs";
 import { CgDatabase } from "react-icons/cg";
-import { FaReact, FaRocketchat } from "react-icons/fa";
-import { TbBrandNextjs, TbFileTypography,  } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs, TbFileTypography } from "react-icons/tb";
 import { DiCss3Full, DiMongodb } from "react-icons/di";
-import {     } from "react-icons/md";
-import { SiDatacamp, SiInternetarchive, SiJavascript, SiRedux, SiTailwindcss } from "react-icons/si";
+import {} from "react-icons/md";
+import {
+  SiDatacamp,
+  SiInternetarchive,
+  SiJavascript,
+  SiRedux,
+  SiTailwindcss,
+} from "react-icons/si";
 
 const Services = () => {
   return (
-    <div>
-      <div className="py-5 px-10 bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-500 text-purple-800 rounded-xl">
-        <h1 className="text-3xl flex items-center text-start  font-semibold">
+    <div className="  my-20">
+      <div className=" sticky top-3 py-5">
+        <h1 className="text-3xl flex gap8 items-center text-start  font-semibold">
           <CgDatabase /> Services
         </h1>
         <hr className="w-28 " />
       </div>
-      <div>
-        <h1 className="text-2xl font-semibold text-blue-600 text-start mt-3">
-          Frontend Development / Web Development{" "}
-          <samp className="text-xs">With</samp>
-        </h1>
+      <div className="w-1/2 mx-auto">
         <div className=" grid grid-cols-1 gap-6 items-start">
           <h1 className="flex items-center gap-2">
             <AiOutlineHtml5 /> HTML5
@@ -89,14 +91,14 @@ const Services = () => {
           </div>
           <div className="flex gap-3 items-start">
             <h1 className="flex items-center gap-2">
-               <SiInternetarchive /> Others
+              <SiInternetarchive /> Others
             </h1>
             <div>
               <h1 className="flex items-center gap-2">
                 <AiOutlineNodeCollapse /> Formik
               </h1>
               <h1 className="flex items-center gap-2">
-                <SiDatacamp /> Api
+                <SiDatacamp /> REST API{" "}
               </h1>
             </div>
           </div>
