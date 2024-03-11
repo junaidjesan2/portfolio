@@ -14,9 +14,9 @@ const Layouts = () => {
                 <div className='py-10 min-h-screen px-8 bg-cover '>
                     <Outlet></Outlet>
                 </div>
-                <div className='glass'>
+                {/* <div className='glass'>
                     <Footer></Footer>
-                </div>
+                </div> */}
             </div>
     );
 };
