@@ -31,12 +31,12 @@ const Header = () => {
               500,
               "Junaid",
               500,
-              "",
+              "Junaid Ahamed Jesan",
               500,
             ]}
             speed={50}
             style={{ fontSize: "2em" }}
-            repeat={Infinity}
+            repeat={1}
           />
           <span className="font-semibold normal-case text-xs md:text-xs">
             junaidjesan2@gmail.com

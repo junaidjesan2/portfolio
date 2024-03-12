@@ -17,6 +17,7 @@ import {
   SiRedux,
   SiTailwindcss,
 } from "react-icons/si";
+import { TypeAnimation } from "react-type-animation";
 
 const Services = () => {
   return (
@@ -30,24 +31,85 @@ const Services = () => {
       <div className="w-1/2 mx-auto">
         <div className=" grid grid-cols-1 gap-6 items-start">
           <h1 className="flex items-center gap-2">
-            <AiOutlineHtml5 /> HTML5
+            <AiOutlineHtml5 />
+            HTML
           </h1>
           <div className="flex gap-3 items-start">
             <h1 className="flex items-center gap-2">
-              <DiCss3Full /> Css3
+              <DiCss3Full /> CSS
             </h1>
             <div className="justify-start">
               <h1 className="flex items-center gap-2">
-                <SiTailwindcss /> Tailwind
+                <SiTailwindcss />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "TailwindCSS", //  Continuing previous Text
+                    500,
+                    "Tailwind",
+                    500,
+                    "Tail",
+                    500,
+                    "TailwindCSS",
+                    500,
+                  ]}
+                  speed={100}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <SiTailwindcss /> DaisyUi
+                <SiTailwindcss />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "DaisyUI", //  Continuing previous Text
+                    500,
+                    "Daisy",
+                    500,
+                    "Dai",
+                    500,
+                    "DaisyUI",
+                    500,
+                  ]}
+                  speed={0}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <SiTailwindcss /> MetarialUi
+                <SiTailwindcss />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "MetarialUI", //  Continuing previous Text
+                    500,
+                    "Metarial",
+                    500,
+                    "Meta",
+                    500,
+                    "MetarialUI",
+                    500,
+                  ]}
+                  speed={-100}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <BsBootstrap /> Bootstrap
+                <BsBootstrap />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Bootstrap", //  Continuing previous Text
+                    500,
+                    "Bootst",
+                    500,
+                    "Boo",
+                    500,
+                    "Bootstrap",
+                    500,
+                  ]}
+                  speed={-200}
+                />
               </h1>
             </div>
           </div>
@@ -57,35 +119,137 @@ const Services = () => {
             </h1>
             <div>
               <h1 className="flex items-center gap-2">
-                <SiJavascript /> Es6
+                <SiJavascript />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "ES6", //  Continuing previous Text
+                    500,
+                    "ES",
+                    500,
+                    "E",
+                    500,
+                    "ES6",
+                    500,
+                  ]}
+                  speed={-300}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <TbBrandNextjs /> Next.js
+                <TbBrandNextjs />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Next.js", //  Continuing previous Text
+                    500,
+                    "Next",
+                    500,
+                    "N",
+                    500,
+                    "Next.js",
+                    500,
+                  ]}
+                  speed={-400}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <FaReact /> React
+                <FaReact />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "React", //  Continuing previous Text
+                    500,
+                    "Rea",
+                    500,
+                    "R",
+                    500,
+                    "React",
+                    500,
+                  ]}
+                  speed={-500}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <FaReact /> React Native
-              </h1>
-              <h1 className="flex items-center gap-2">
-                <SiRedux /> Redux
+                <SiRedux />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Redux", //  Continuing previous Text
+                    500,
+                    "Red",
+                    500,
+                    "R",
+                    500,
+                    "Redux",
+                    500,
+                  ]}
+                  speed={-600}
+                />
               </h1>
             </div>
           </div>
           <div className="flex gap-3 items-start">
             <h1 className="flex items-center gap-2">
-              <AiFillDatabase /> Database or Backend
+              <AiFillDatabase /> Database and Backend
             </h1>
             <div>
               <h1 className="flex items-center gap-2">
-                <AiOutlineNodeCollapse /> Node.js
+                <AiOutlineNodeCollapse />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Node.js", //  Continuing previous Text
+                    500,
+                    "Node",
+                    500,
+                    "N",
+                    500,
+                    "Node.js",
+                    500,
+                  ]}
+                  speed={-700}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <DiMongodb /> Mongodb CURD
+                <DiMongodb />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Mongodb CURD", //  Continuing previous Text
+                    500,
+                    "Mongodb",
+                    500,
+                    "Mon",
+                    500,
+                    "Mongodb CURD",
+                    500,
+                  ]}
+                  speed={-800}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <TbFileTypography /> Sql
+                <TbFileTypography />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "SQL", //  Continuing previous Text
+                    500,
+                    "SQ",
+                    500,
+                    "S",
+                    500,
+                    "SQL",
+                    500,
+                  ]}
+                  speed={-900}
+                />
               </h1>
             </div>
           </div>
@@ -95,10 +259,40 @@ const Services = () => {
             </h1>
             <div>
               <h1 className="flex items-center gap-2">
-                <AiOutlineNodeCollapse /> Formik
+                <AiOutlineNodeCollapse />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Formik", //  Continuing previous Text
+                    500,
+                    "For",
+                    500,
+                    "F",
+                    500,
+                    "Formik",
+                    500,
+                  ]}
+                  speed={-1000}
+                />
               </h1>
               <h1 className="flex items-center gap-2">
-                <SiDatacamp /> REST API{" "}
+                <SiDatacamp />
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Restful API", //  Continuing previous Text
+                    500,
+                    "Restful",
+                    500,
+                    "Rest",
+                    500,
+                    "Restful API",
+                    500,
+                  ]}
+                  speed={-1100}
+                />
               </h1>
             </div>
           </div>
