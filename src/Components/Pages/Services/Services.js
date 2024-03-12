@@ -34,11 +34,11 @@ const Services = () => {
             <AiOutlineHtml5 />
             HTML
           </h1>
-          <div className="flex gap-3 items-start">
-            <h1 className="flex items-center gap-2">
+          <div className="flex gap-5 items-start">
+            <h1 className="flex items-center md:gap-2">
               <DiCss3Full /> CSS
             </h1>
-            <div className="justify-start">
+            <div className=" md:space-y-4">
               <h1 className="flex items-center gap-2">
                 <SiTailwindcss />{" "}
                 <TypeAnimation
@@ -113,11 +113,11 @@ const Services = () => {
               </h1>
             </div>
           </div>
-          <div className="flex gap-3 items-start">
+          <div className="flex gap-5 items-start">
             <h1 className="flex items-center gap-2">
               <SiJavascript /> Javascript
             </h1>
-            <div>
+            <div className="md:space-y-4">
               <h1 className="flex items-center gap-2">
                 <SiJavascript />{" "}
                 <TypeAnimation
@@ -192,11 +192,11 @@ const Services = () => {
               </h1>
             </div>
           </div>
-          <div className="flex gap-3 items-start">
+          <div className="flex gap-5 items-start">
             <h1 className="flex items-center gap-2">
               <AiFillDatabase /> Database and Backend
             </h1>
-            <div>
+            <div className="md:space-y-4">
               <h1 className="flex items-center gap-2">
                 <AiOutlineNodeCollapse />{" "}
                 <TypeAnimation
@@ -253,11 +253,11 @@ const Services = () => {
               </h1>
             </div>
           </div>
-          <div className="flex gap-3 items-start">
+          <div className="flex gap-5 items-start">
             <h1 className="flex items-center gap-2">
               <SiInternetarchive /> Others
             </h1>
-            <div>
+            <div className="md:space-y-4">
               <h1 className="flex items-center gap-2">
                 <AiOutlineNodeCollapse />{" "}
                 <TypeAnimation
