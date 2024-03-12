@@ -55,6 +55,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={100}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -73,6 +74,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={0}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -91,6 +93,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-100}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -109,6 +112,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-200}
+                  repeat={Infinity}
                 />
               </h1>
             </div>
@@ -134,6 +138,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-300}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -152,6 +157,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-400}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -170,6 +176,26 @@ const Services = () => {
                     500,
                   ]}
                   speed={-500}
+                  repeat={Infinity}
+                />
+              </h1>
+              <h1 className="flex items-center gap-2">
+                <FaReact />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Vite", //  Continuing previous Text
+                    500,
+                    "Vit",
+                    500,
+                    "V",
+                    500,
+                    "Vite",
+                    500,
+                  ]}
+                  speed={-500}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -188,6 +214,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-600}
+                  repeat={Infinity}
                 />
               </h1>
             </div>
@@ -213,6 +240,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-700}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -231,6 +259,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-800}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -249,6 +278,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-900}
+                  repeat={Infinity}
                 />
               </h1>
             </div>
@@ -274,6 +304,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-1000}
+                  repeat={Infinity}
                 />
               </h1>
               <h1 className="flex items-center gap-2">
@@ -292,6 +323,7 @@ const Services = () => {
                     500,
                   ]}
                   speed={-1100}
+                  repeat={Infinity}
                 />
               </h1>
             </div>
