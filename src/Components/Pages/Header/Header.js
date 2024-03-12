@@ -47,7 +47,7 @@ const Header = () => {
             onClick={handleResumeDownload}
             className="flex hover:text-pink-500 items-center gap-2 lg:gap-5 mx-auto"
           >
-            <div className="tooltip tooltip-bottom" data-tip="Download Resume">
+            <div className="tooltip tooltip-bottom tooltip-secondary" data-tip="Download Resume">
               <button className="btn">
                 <BsDownload />
               </button>

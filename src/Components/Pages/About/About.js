@@ -40,14 +40,14 @@ const About = () => {
           }}
           className="w-full md:w-1/3"
         >
-          <img src={image} className="rounded-full h-32 w-32" alt="" />
+          <img src={image} className="rounded-full" alt="" />
         </motion.div>
-        <div className="w-full md:w-2/3 md:mt-16">
+        <div className="w-full md:w-2/3 md:mt-16 my-10">
           <h1 className="text-2xl font-semibold text-blue-600">
             Web Developer / Frontend Developer
           </h1>
-          <div className="md:flex text-start gap-10 justify-evenly md:mt-5">
-            <div className="md:space-y-6">
+          <div className="md:flex text-start gap-10 justify-evenly md:mt-5 mt-3">
+            <div className="md:space-y-6 space-y-2">
               <h1>
                 <strong>Name:</strong> Junaid Ahamed Jesan
               </h1>
@@ -61,7 +61,7 @@ const About = () => {
                 <strong>City:</strong> Narayanganj, Dhaka, Bangladesh
               </h1>
             </div>
-            <div className="md:space-y-6">
+            <div className="md:space-y-6 space-y-2">
               <h1>
                 <strong>age:</strong> 22y
               </h1>
