@@ -10,19 +10,12 @@ import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   const settings = {
+    className: "",
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
-    swipeToSlide: true,
-    beforeChange: function(currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-    },
-    afterChange: function(currentSlide) {
-      console.log("after change", currentSlide);
-    }
+    adaptiveHeight: true,
   };
   return (
     <>
@@ -31,14 +24,15 @@ const Home = () => {
           <TypeAnimation
             sequence={["Front-end", 700, "Web", 700, "MERN Stack", 700]}
             repeat={Infinity}
-          />  Developer
+          />{" "}
+          Developer
         </h1>
         <div>
-          <div className="slider-container md:w-2/4 mx-auto mt-14 md:my-20">
+          <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
             <Slider {...settings}>
               {Projects.map((data) => (
                 <>
-                  <div className="drop-shadow-md py-2 md:mb-3 border-2 border-[#be94f9] rounded-lg">
+                  <div className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg">
                     <div key={data.id}>
                       <p className="md:text-2xl text-lg font-semibold text-center align-middle">
                         {data.name}
