@@ -19,7 +19,22 @@ export default function Galley() {
             ))}
           </Masonry>
         </ResponsiveMasonry>
+        <div>
+          <button
+            className=" bg-[#be94f9] px-4 py-1 my-5 w-2/5 rounded-md font-semibold"
+            onClick={setInterval(DataLoad, 5000)}
+          >
+            Load More images
+          </button>
+        </div>
       </div>
     </div>
   );
 }
+const DataLoad = () => {
+  return (
+    <div>
+      <h1 className="bg-black h-full w-full">Loading.......</h1>
+    </div>
+  );
+};
