@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen my-5">
         <div className="sticky top-3 py-5">
           <h1 className="md:text-3xl text-xl flex gap-3 items-center text-start font-semibold">
             Contact

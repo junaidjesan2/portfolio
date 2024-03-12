@@ -8,8 +8,8 @@ import { useRef } from "react";
 const About = () => {
   const constraintsRef = useRef(null);
   return (
-    <div className="mb-5 min-h-screen">
-      <div className="sticky top-3 py-8">
+    <div className="my-10 min-h-screen">
+      <div className="sticky top-1 py-8">
         <h1 className="md:text-3xl text-xl flex gap-3 items-center text-start font-semibold">
           About
         </h1>
@@ -40,7 +40,7 @@ const About = () => {
           }}
           className="w-full md:w-1/3"
         >
-          <img src={image} className="rounded-full" alt="" />
+          <img src={image} className="rounded-full h-32 w-32" alt="" />
         </motion.div>
         <div className="w-full md:w-2/3 md:mt-16">
           <h1 className="text-2xl font-semibold text-blue-600">
