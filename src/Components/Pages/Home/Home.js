@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaGithubAlt } from "react-icons/fa";
-import Projects from "../../../data/data";
+import Projects from "../../../data/projectsData";
 import { MdLiveTv } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
 
