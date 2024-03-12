@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="my-10 min-h-screen">
       <div className="sticky top-1 py-8">
-        <h1 className="md:text-3xl text-xl flex gap-3 items-center text-start font-semibold">
+        <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
           About
         </h1>
         <hr className="md:w-28 w-16" />
@@ -43,8 +43,8 @@ const About = () => {
           <img src={image} className="rounded-full" alt="" />
         </motion.div>
         <div className="w-full md:w-2/3 md:mt-16 my-10">
-          <h1 className="text-2xl font-semibold text-blue-600">
-            Web Developer / Frontend Developer
+          <h1 className="text-2xl font-semibold text-[#be94f9]">
+            Junaid's Overview
           </h1>
           <div className="md:flex text-start gap-10 justify-evenly md:mt-5 mt-3">
             <div className="md:space-y-6 space-y-2">

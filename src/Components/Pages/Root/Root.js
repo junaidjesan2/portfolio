@@ -3,8 +3,8 @@ import Services from "../Services/Services";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
-import Gellary from "../Gellary/Gellary";
 import Footer from "../../shared/Footer/Footer";
+import Gallery from "../Gallery/Gallery";
 
 export default function Root() {
   return (
@@ -13,7 +13,7 @@ export default function Root() {
       <Services></Services>
       <About></About>
       <Contact></Contact>
-      <Gellary></Gellary>
+      <Gallery></Gallery>
       <Footer></Footer>
     </div>
   );

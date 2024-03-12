@@ -38,7 +38,7 @@ const Home = () => {
             <Slider {...settings}>
               {Projects.map((data) => (
                 <>
-                  <div className="drop-shadow-md py-2 md:mb-3 border-2 border-[#063970] rounded-lg">
+                  <div className="drop-shadow-md py-2 md:mb-3 border-2 border-[#be94f9] rounded-lg">
                     <div key={data.id}>
                       <p className="md:text-2xl text-lg font-semibold text-center align-middle">
                         {data.name}
