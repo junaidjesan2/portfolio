@@ -9,7 +9,7 @@ const Projects = [
     id: 2,
     name: "Hockey Club",
     github: "https://github.com/junaidjesan2/hockey-club",
-    liveLink: "",
+    liveLink: "https://junaidjesan2.github.io/hockey-club",
   },
   {
     id: 3,
@@ -46,6 +46,12 @@ const Projects = [
     name: "Advance Filtering",
     github: "https://github.com/junaidjesan2/advance-filtering",
     liveLink: "https://ecommerce-filter2.netlify.app/",
+  },
+  {
+    id: 9,
+    name: "Ali Parvin Travels",
+    github: "https://github.com/junaidjesan2/aliparvin-travels",
+    liveLink: " https://junaidjesan2.github.io/aliparvin-travels",
   },
 ];
 

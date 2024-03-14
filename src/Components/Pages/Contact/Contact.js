@@ -47,7 +47,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Name"
                 name="user_name"
-                className="input input-secondary"
+                className="input border-[#be94f9]"
               />
             </div>
             <div className="form-control">
@@ -58,7 +58,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Email"
                 name="user_email"
-                className="input input-secondary"
+                className="input border-[#be94f9]"
               />
             </div>
             <div className="form-control">
@@ -69,11 +69,11 @@ const Contact = () => {
                 type="text"
                 placeholder="Message"
                 name="message"
-                className="textarea textarea-secondary"
+                className="textarea border-[#be94f9]"
               />
             </div>
             <div className="form-control mt-6">
-              <button value="send" className="btn btn-secondary">
+              <button value="send" className="bg-[#be94f9] py-4 rounded-lg hover:rounded-2xl hover:drop-shadow-xl hover:text-slate-800">
                 Send
               </button>
             </div>

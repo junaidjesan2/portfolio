@@ -4,7 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaGithubAlt } from "react-icons/fa";
+
 import Projects from "../../../data/projectsData";
+
 import { MdLiveTv } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
 
@@ -27,7 +29,8 @@ const Home = () => {
           />{" "}
           Developer
         </h1>
-        <div>
+        <div className="relative py-1 mt-24 ">
+        <div className="badge badge-primary badge-outline absolute top-0 md:right-52">Latest Projects</div>
           <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
             <Slider {...settings}>
               {Projects.map((data) => (

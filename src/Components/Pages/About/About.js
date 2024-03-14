@@ -1,6 +1,6 @@
 import { MotionConfig } from "framer-motion";
 import React from "react";
-import image from "../../../images/junaid/junaid5.jpg";
+import image from "../../../images/junaid/about-cover.jpg";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
