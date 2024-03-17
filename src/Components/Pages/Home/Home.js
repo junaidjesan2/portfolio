@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaGithubAlt } from "react-icons/fa";
 
-import Projects from "../../../data/projectsData";
-
 import { MdLiveTv } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
+import axios from "axios";
 
 const Home = () => {
+  const [projectsData, setProjectsData] = useState([]);
   const settings = {
     className: "",
     dots: true,
@@ -19,6 +19,19 @@ const Home = () => {
     slidesToScroll: 1,
     adaptiveHeight: true,
   };
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://junaidjesan2.github.io/recipe-for-health-data/projectsData.json"
+      )
+      .then(function (response) {
+        setProjectsData(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, [projectsData]);
   return (
     <>
       <div className="min-h-screen">
@@ -30,10 +43,12 @@ const Home = () => {
           Developer
         </h1>
         <div className="relative py-1 mt-24 ">
-        <div className="badge badge-primary badge-outline absolute top-0 md:right-52">Latest Projects</div>
+          <div className="badge badge-primary badge-outline absolute top-0 md:right-52">
+            Latest Projects
+          </div>
           <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
             <Slider {...settings}>
-              {Projects.map((data) => (
+              {projectsData.map((data) => (
                 <>
                   <div className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg">
                     <div key={data.id}>
