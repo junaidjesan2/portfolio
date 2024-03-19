@@ -3,7 +3,10 @@ import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="footer justify-evenly py-6 border-t-2">
+    <footer className="footer py-6 border-t-2 flex flex-row justify-around">
+      <div>
+        <h1 className="text-2xl">junaidjesan2@gmail.com</h1>
+      </div>
       <div>
         <ul className="grid grid-flow-col gap-7">
           <li>
