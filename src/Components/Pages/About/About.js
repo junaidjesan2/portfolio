@@ -21,13 +21,7 @@ const About = () => {
           dragConstraints={constraintsRef}
           className="text-justify mx-auto md:px-16 ml-28 md:ml-0"
         >
-          I am Junaid Ahamed Jesan an Ambivert person. Basically i am a Frontend
-          Developer. I'm so foodie person, i love to eat food and my hobbies are
-          Skiing, Diving, Sleeping, Astrography, Skydiving. I love to enjoy my
-          life with my Parents Friends and Relatives. i love my mother most like
-          whatever i have done or whatever i am doing all of this is only for my
-          mother's happiness. And my last massage for all is{" "}
-          <strong>Bepar Na</strong>.
+          I'm Junaid Ahamed Jesan a skilled web developer and programmer with one year of website development and three years of programming experience. My journey began with a curiosity-driven exploration of coding's possibilities, mastering various languages, frameworks, and methodologies. I'm specialize in crafting visually captivating designs and seamless functionality, prioritizing user experience in every project. I stay updated with the latest technologies, thrives in team environments, and is known for my collaborative spirit and strong work ethic.
         </div>
       </div>
       <div className="md:flex mx-auto gap-12 mt-20">
