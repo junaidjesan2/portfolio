@@ -5,10 +5,10 @@ import {
   AiOutlineNodeCollapse,
 } from "react-icons/ai";
 import { BsBootstrap } from "react-icons/bs";
-import { CgDatabase } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { TbBrandNextjs, TbFileTypography } from "react-icons/tb";
+import { FaChrome, FaNpm, FaReact } from "react-icons/fa";
+import { TbBrandNextjs, TbBrandVisualStudio, TbFileTypography } from "react-icons/tb";
 import { DiCss3Full, DiMongodb } from "react-icons/di";
+import { GoBrowser, GoTools } from "react-icons/go";
 import {} from "react-icons/md";
 import {
   SiDatacamp,
@@ -323,6 +323,89 @@ const Services = () => {
                     500,
                   ]}
                   speed={-1100}
+                  repeat={Infinity}
+                />
+              </h1>
+            </div>
+          </div>
+          <div className="flex gap-5 items-start">
+            <h1 className="flex items-center md:gap-2">
+              <GoTools /> Tools
+            </h1>
+            <div className=" md:space-y-4">
+              <h1 className="flex items-center gap-2">
+                <TbBrandVisualStudio />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "VS Code", //  Continuing previous Text
+                    500,
+                    "VS CO",
+                    500,
+                    "VS",
+                    500,
+                    "VS Code",
+                    500,
+                  ]}
+                  speed={100}
+                  repeat={Infinity}
+                />
+              </h1>
+              <h1 className="flex items-center gap-2">
+                <FaChrome />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Chrome Dev Tool", //  Continuing previous Text
+                    500,
+                    "Chrome Dev",
+                    500,
+                    "Chrome",
+                    500,
+                    "Chrome Dev Tool",
+                    500,
+                  ]}
+                  speed={0}
+                  repeat={Infinity}
+                />
+              </h1>
+              <h1 className="flex items-center gap-2">
+                <FaNpm />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "NPM", //  Continuing previous Text
+                    500,
+                    "NP",
+                    500,
+                    "N",
+                    500,
+                    "NPM",
+                    500,
+                  ]}
+                  speed={-100}
+                  repeat={Infinity}
+                />
+              </h1>
+              <h1 className="flex items-center gap-2">
+                <GoBrowser />{" "}
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "Browsers", //  Continuing previous Text
+                    500,
+                    "Brows",
+                    500,
+                    "Bro",
+                    500,
+                    "Browsers",
+                    500,
+                  ]}
+                  speed={-200}
                   repeat={Infinity}
                 />
               </h1>
