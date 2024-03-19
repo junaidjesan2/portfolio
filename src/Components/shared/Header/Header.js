@@ -36,7 +36,7 @@ const Header = () => {
             ]}
             speed={50}
             style={{ fontSize: "1em" }}
-            repeat={1}
+            repeat={0}
           />
           <span className="font-semibold normal-case text-xs md:text-xs">
             junaidjesan2@gmail.com
