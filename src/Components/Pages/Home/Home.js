@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <div className="min-h-screen">
-        <div className="flex items-center">
+        <div className="flex flex-col md:flex-row mx-auto items-center">
           <div className="w-1/2">
             <h1 className="lg:text-start md:text-4xl text-2xl lg:ml-32">
               <TypeAnimation
@@ -47,8 +47,8 @@ const Home = () => {
               />{" "}
               Developer
             </h1>
-            <div className="w-1/5 mt-7 lg:ml-32">
-              <ul className=" flex items-center justify-between">
+            <div className="lg:w-1/5 mt-7 lg:ml-32">
+              <ul className=" flex items-center justify-between gap-4">
                 <li className="">
                   <a
                     href="https://github.com/junaidjesan2"
@@ -84,7 +84,7 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 mt-10 md:mt-0">
             <img src={cover} />
           </div>
         </div>
