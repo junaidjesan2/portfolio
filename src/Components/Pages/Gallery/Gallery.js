@@ -40,7 +40,6 @@ export default function Galley() {
 }
 
 const ShowImage = (image) => {
-  console.log(image.image);
   const [openImage, setOpenImage] = useState(false);
   return (
     <div className="">
@@ -52,10 +51,13 @@ const ShowImage = (image) => {
       {openImage && (
         <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center">
           <div className="bg-white p-2 h-screen rounded mx-28 my-16">
-          <CgCloseR onClick={()=>setOpenImage(false)} className= "fixed h-6 w-6 text-black"/>
-          <div className="h-screen overflow-y-scroll">
-            <img src={image.image.src} className=""/>
-          </div>
+            <CgCloseR
+              onClick={() => setOpenImage(false)}
+              className="fixed h-6 w-6 text-black"
+            />
+            <div className="h-screen overflow-y-scroll">
+              <img src={image.image.src} className="" />
+            </div>
           </div>
         </div>
       )}

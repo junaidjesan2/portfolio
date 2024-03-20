@@ -85,7 +85,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2">
-            <img src={cover}/>
+            <img src={cover} />
           </div>
         </div>
         <div className="relative py-1 mt-24 ">
