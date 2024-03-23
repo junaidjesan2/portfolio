@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(
-        "https://junaidjesan2.github.io/recipe-for-health-data/projectsData.json"
+        "https://junaidjesan2.github.io/datas/portfolioData.json"
       )
       .then(function (response) {
         setProjectsData(response.data);
