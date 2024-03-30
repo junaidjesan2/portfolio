@@ -25,9 +25,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get(
-        "https://junaidjesan2.github.io/datas/portfolioData.json"
-      )
+      .get("https://junaidjesan2.github.io/datas/portfolioData.json")
       .then(function (response) {
         setProjectsData(response.data);
       })
@@ -39,7 +37,7 @@ const Home = () => {
     <>
       <div className="min-h-screen">
         <div className="flex flex-col md:flex-row mx-auto items-center">
-          <div className="w-1/2">
+          <div data-aos="zoom-in-right" data-aos-duration="1000" className="w-1/2">
             <h1 className="lg:text-start md:text-4xl text-2xl lg:ml-32">
               <TypeAnimation
                 sequence={["Front-end", 700, "Web", 700, "MERN Stack", 700]}
@@ -84,19 +82,26 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="w-1/2 mt-10 md:mt-0">
+          <div data-aos="zoom-in-left" data-aos-duration="1000" className="w-1/2 mt-10 md:mt-0">
             <img src={cover} />
           </div>
         </div>
         <div className="relative py-1 mt-24 ">
-          <div className="badge badge-primary badge-outline absolute top-0 md:right-52">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2500"
+            className="badge badge-primary badge-outline absolute top-0 md:right-52"
+          >
             Latest Projects
           </div>
           <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
             <Slider {...settings}>
               {projectsData.map((data) => (
                 <>
-                  <div className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg">
+                  <div
+                    data-aos="fade-left"
+                    className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg"
+                  >
                     <div key={data.id}>
                       <p className="md:text-2xl text-lg font-semibold text-center align-middle">
                         {data.name}

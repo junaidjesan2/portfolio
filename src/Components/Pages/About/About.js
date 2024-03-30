@@ -4,12 +4,16 @@ import image from "../../../images/junaid/about-cover.jpg";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-
 const About = () => {
   const constraintsRef = useRef(null);
   return (
     <div className="my-10 min-h-screen">
-      <div className="sticky top-1 py-8">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="sticky top-1 py-8"
+      >
         <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
           About
         </h1>
@@ -21,7 +25,15 @@ const About = () => {
           dragConstraints={constraintsRef}
           className="text-justify mx-auto md:px-16 ml-28 md:ml-0"
         >
-          I'm Junaid Ahamed Jesan a skilled web developer and programmer with one year of website development and three years of programming experience. My journey began with a curiosity-driven exploration of coding's possibilities, mastering various languages, frameworks, and methodologies. I'm specialize in crafting visually captivating designs and seamless functionality, prioritizing user experience in every project. I stay updated with the latest technologies, thrives in team environments, and is known for my collaborative spirit and strong work ethic.
+          I'm Junaid Ahamed Jesan a skilled web developer and programmer with
+          one year of website development and three years of programming
+          experience. My journey began with a curiosity-driven exploration of
+          coding's possibilities, mastering various languages, frameworks, and
+          methodologies. I'm specialize in crafting visually captivating designs
+          and seamless functionality, prioritizing user experience in every
+          project. I stay updated with the latest technologies, thrives in team
+          environments, and is known for my collaborative spirit and strong work
+          ethic.
         </div>
       </div>
       <div className="md:flex mx-auto gap-12 mt-20">
