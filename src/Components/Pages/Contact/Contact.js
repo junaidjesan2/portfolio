@@ -48,7 +48,7 @@ const Email = () => {
   };
   return (
     <form ref={form} onSubmit={sendEmail} className="md:w-1/2 w-full">
-      <div className="form-control">
+      <div data-aos="flip-up" data-aos-duration="1000" className="form-control">
         <label className="label">
           <span className="label-text">Name</span>
         </label>
@@ -60,7 +60,7 @@ const Email = () => {
           required
         />
       </div>
-      <div className="form-control">
+      <div data-aos="flip-up" data-aos-duration="2000" className="form-control">
         <label className="label">
           <span className="label-text">Email</span>
         </label>
@@ -72,7 +72,7 @@ const Email = () => {
           required
         />
       </div>
-      <div className="form-control">
+      <div data-aos="flip-up" data-aos-duration="3000" className="form-control">
         <label className="label">
           <span className="label-text">Message</span>
         </label>
@@ -84,7 +84,7 @@ const Email = () => {
           required
         />
       </div>
-      <div className="form-control mt-6">
+      <div data-aos="zoom-in" data-aos-duration="3000" className="form-control mt-6">
         <button
           value="send"
           className="bg-[#be94f9] py-4 rounded-lg hover:rounded-2xl hover:drop-shadow-xl hover:text-slate-800"
