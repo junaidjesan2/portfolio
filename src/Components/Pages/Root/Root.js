@@ -10,7 +10,7 @@ import Certificat from "../Certificates/Certificat";
 
 export default function Root() {
   return (
-    <div className="lg:h-screen my-auto h-40 lg:w-full bg-cover bg-center mx-auto">
+    <div className="w-full mx-auto">
       <Home></Home>
       <Services></Services>
       <About></About>

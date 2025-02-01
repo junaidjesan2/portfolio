@@ -8,7 +8,7 @@ const Layouts = () => {
       <div>
         <Header></Header>
       </div>
-      <div className="py-10 px-8 bg-cover ">
+      <div className="lg:px-10 px-7 mx-auto">
         <Outlet></Outlet>
       </div>
     </div>

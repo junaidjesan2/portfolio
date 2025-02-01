@@ -3,7 +3,7 @@ import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="footer py-6 border-t-2 flex flex-row justify-around">
+    <footer className="footer py-6 border-t-2 flex flex-col md:flex-row items-center justify-center md:justify-around">
       <div>
         <h1 className="text-2xl">junaidjesan2@gmail.com</h1>
       </div>

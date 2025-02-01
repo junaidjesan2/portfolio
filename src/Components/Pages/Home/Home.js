@@ -100,7 +100,7 @@ const Home = () => {
                 <>
                   <div
                     data-aos="fade-left"
-                    className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg"
+                    className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] hover:border-[#8d5fcf] rounded-lg"
                   >
                     <div key={data.id}>
                       <p className="md:text-2xl text-lg font-semibold text-center align-middle">

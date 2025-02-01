@@ -87,7 +87,7 @@ const Email = () => {
       <div data-aos="zoom-in" data-aos-duration="3000" className="form-control mt-6">
         <button
           value="send"
-          className="bg-[#be94f9] py-4 rounded-lg hover:rounded-2xl hover:drop-shadow-xl hover:text-slate-800"
+          className="bg-[#be94f9] hover:font-semibold py-4 rounded-lg hover:rounded-2xl hover:drop-shadow-xl hover:text-slate-800"
           type="submit"
         >
           Send

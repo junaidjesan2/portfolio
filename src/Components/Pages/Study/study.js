@@ -97,7 +97,7 @@ function Study() {
                             key={index}
                             data-aos="fade-up" // Animation type
                             data-aos-delay={index * 100} // Staggered delay
-                            className="course-item bg-gray-700 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-customPurple"
+                            className="course-item bg-gray-700 p-6 rounded-lg shadow-sm hover:bg-gray-800 shadow-white transition-shadow border-l-4 border-customPurple"
                         >
                             <h3 className="text-xl font-semibold text-gray-50">{course.title}</h3>
                             <p className="text-sm text-customPurple mt-1">{course.duration}</p>
