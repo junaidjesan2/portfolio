@@ -7,6 +7,7 @@ import Contact from "./Components/Pages/Contact/Contact";
 import Resume from "./Components/Pages/Resume/Resume";
 import Services from "./Components/Pages/Services/Services";
 import Root from "./Components/Pages/Root/Root";
+import Certificat from "./Components/Pages/Certificates/Certificat";
 
 const portfolioRouter = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const portfolioRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/certificates",
+        element: <Certificat></Certificat>,
       },
     ],
   },

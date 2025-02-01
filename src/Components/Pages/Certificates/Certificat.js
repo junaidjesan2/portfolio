@@ -1,0 +1,81 @@
+import React, { useState } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import toast from "react-hot-toast";
+import CertificateImages from "../../../data/CertificateImage";
+import Slider from "react-slick";
+import { CgCloseR } from "react-icons/cg";
+
+export default function Certicat() {
+    // const settings = {
+    //     className: "",
+    //     dots: true,
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     adaptiveHeight: true,
+    //   };
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: 1,
+        speed: 500
+      };
+  return (
+    <div>
+        <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="sticky top-3 py-5"
+      >
+        <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
+          Certificates
+        </h1>
+        <hr className="md:w-28 w-16" />
+      </div>
+      <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
+            <Slider {...settings}>
+              {CertificateImages.map((data) => (
+                <>
+                  <div
+                    data-aos="fade-left"
+                    className="drop-shadow-md md:mb-3 border-2 border-[#be94f9] rounded-lg m-6"
+                  >
+                    <div key={data.id}>
+                      <div className="flex justify-around gap-3 items-center rounded-lg p-3">
+                        <ShowImage data={data} key={data.id}></ShowImage>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ))}
+            </Slider>
+          </div>
+    </div>
+  );
+}
+
+const ShowImage = (data) => {
+  const [openImage, setOpenImage] = useState(false);
+  console.log(data.data.src)
+  return (
+    <div className="my-auto">
+      <img src={data.data.src} className="rounded-lg p-0.5"/>
+      {openImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center">
+          <div className="bg-white p-2 h-screen rounded w-3/4 mx-auto">
+            <CgCloseR
+              onClick={() => setOpenImage(false)}
+              className="fixed h-6 w-6 text-black"
+            />
+            <div className="h-screen overflow-y-scroll w-3/4 mx-auto">
+              <img src={data.data.src} className="rounded-lg" />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
