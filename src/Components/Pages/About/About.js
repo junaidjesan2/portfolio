@@ -1,6 +1,6 @@
-import { MotionConfig } from "framer-motion";
+// import { MotionConfig } from "framer-motion";
 import React from "react";
-import image from "../../../images/junaid/about-cover.jpg";
+import image from "../../../images/junaid/img.png";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -25,26 +25,16 @@ const About = () => {
           dragConstraints={constraintsRef}
           className="text-justify mx-auto md:px-16 ml-28 md:ml-0"
         >
-          I'm Junaid Ahamed Jesan a skilled web developer and programmer with
-          one year of website development and three years of programming
-          experience. My journey began with a curiosity-driven exploration of
-          coding's possibilities, mastering various languages, frameworks, and
-          methodologies. I'm specialize in crafting visually captivating designs
-          and seamless functionality, prioritizing user experience in every
-          project. I stay updated with the latest technologies, thrives in team
-          environments, and is known for my collaborative spirit and strong work
-          ethic.
+          I’m a tech enthusiast and problem solver with a burning passion for innovation and creating impactful solutions. My journey in technology has been fueled by curiosity, dedication, and a love for turning ideas into reality. With expertise in programming languages like PHP, C++, JavaScript, and frameworks like React, Next.js, and GitHub, I thrive in building dynamic, user-friendly web applications and solving complex coding challenges.
+          <br />
+          I’ve sharpened my skills through competitive coding on platforms like Codeforces and HackerRank, where I’ve honed my algorithmic thinking and problem-solving abilities. To further expand my knowledge, I’ve completed hands-on training programs in IT Support, Web Development, Full-Stack Development, and Computer Science Engineering. These experiences have equipped me with practical skills in network management, agile development, cloud computing, and database systems.
+          <br />
+          Let’s connect and create something extraordinary together! 💻✨
         </div>
       </div>
       <div className="md:flex mx-auto gap-12 mt-20">
         <motion.div
-          whileHover={{ scale: 1.2, rotate: 90 }}
-          whileTap={{
-            scale: 0.8,
-            rotate: -180,
-            borderRadius: "100%",
-          }}
-          className="w-full md:w-1/3"
+          className="w-full md:w-1/3 drop-shadow-lg"
         >
           <img src={image} className="rounded-full" alt="" />
         </motion.div>

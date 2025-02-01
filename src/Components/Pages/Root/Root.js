@@ -5,6 +5,7 @@ import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
 import Footer from "../../shared/Footer/Footer";
 import Gallery from "../Gallery/Gallery";
+import Study from "../Study/study";
 
 export default function Root() {
   return (
@@ -12,6 +13,7 @@ export default function Root() {
       <Home></Home>
       <Services></Services>
       <About></About>
+      <Study></Study>
       <Contact></Contact>
       <Gallery></Gallery>
       <Footer></Footer>
