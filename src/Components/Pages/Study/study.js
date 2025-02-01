@@ -77,21 +77,6 @@ function Study() {
                 </h1>
                 <hr className="md:w-28 w-16" />
             </div>
-            {/* <div className="bg-gray-900 p-6 rounded-lg shadow-sm">
-                <h2 className="text-2xl font-bold text-customPurple mb-6">Professional Training and Courses</h2>
-                <ul className="space-y-4">
-                    {courses.map((course, index) => (
-                        <li
-                            key={index}
-                            className="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-customPurple"
-                        >
-                            <h3 className="text-xl font-semibold text-gray-100">{course.title}</h3>
-                            <p className="text-sm text-customPurple mt-1">{course.duration}</p>
-                            <p className="text-gray-500 mt-2">{course.description}</p>
-                        </li>
-                    ))}
-                </ul>
-            </div> */}
             <div className="bg-gray-900 p-6 rounded-lg shadow-sm">
                 <h2 className="text-2xl font-bold text-slate-200 mb-6">
                     <TypeAnimation

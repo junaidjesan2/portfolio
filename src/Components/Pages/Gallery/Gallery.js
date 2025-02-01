@@ -26,8 +26,11 @@ export default function Galley() {
       <div className="my-28">
         <ResponsiveMasonry columnsCountBreakPoints={{ 300: 1, 500: 2, 900: 3 }}>
           <Masonry columnsCount={3} gutter="10px">
-            {ProjectImage.map((image) => (
-              <ShowImage image={image} key={image.id}></ShowImage>
+            {ProjectImage.map((image, index) => (
+              <li data-aos="fade-up" // Animation type
+                data-aos-delay={index * 100}>
+                <ShowImage image={image} key={image.id}></ShowImage>
+              </li>
             ))}
           </Masonry>
         </ResponsiveMasonry>

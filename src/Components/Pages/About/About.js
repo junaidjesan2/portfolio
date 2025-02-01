@@ -48,7 +48,7 @@ const About = () => {
                 <strong>Name:</strong> Junaid Ahamed Jesan
               </h1>
               <h1 data-aos="zoom-out-up" data-aos-duration="100">
-                <strong>Phone:</strong> +880 1905039725
+                <strong>Phone:</strong> +880 1845338379
               </h1>
               <h1 data-aos="zoom-out-up" data-aos-duration="1500">
                 <strong>E-mail:</strong> junaidjesan2@gmail.com
@@ -59,10 +59,10 @@ const About = () => {
             </div>
             <div className="md:space-y-6 space-y-2">
               <h1 data-aos="zoom-out-up" data-aos-duration="1500">
-                <strong>age:</strong> 22y
+                <strong>DOB :</strong> 7th December 2002
               </h1>
               <h1 data-aos="zoom-out-up" data-aos-duration="1500">
-                <strong>Degree:</strong> B.Sc in Software Development (ongoing)
+                <strong>Degree:</strong> ...
               </h1>
               <h1 data-aos="zoom-out-up" data-aos-duration="1500">
                 <strong>Freelance:</strong> Available
