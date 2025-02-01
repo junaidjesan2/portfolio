@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { TypeAnimation } from "react-type-animation";
+import Section from '../../shared/Section/Section';
 
 function Study() {
     const courses = [
@@ -67,15 +68,9 @@ function Study() {
     return (
         <div className="my-10 min-h-screen">
             <div
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-                className="sticky top-1 py-8"
+                className="sticky top-1"
             >
-                <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-                    Study
-                </h1>
-                <hr className="md:w-28 w-16" />
+                <Section>Courses</Section>
             </div>
             <div className="bg-gray-900 p-6 rounded-lg shadow-sm">
                 <h2 className="text-2xl font-bold text-slate-200 mb-6">

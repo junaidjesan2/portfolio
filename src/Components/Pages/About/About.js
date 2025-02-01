@@ -1,23 +1,15 @@
 // import { MotionConfig } from "framer-motion";
 import React from "react";
-import image from "../../../images/junaid/img.png";
-import { motion } from "framer-motion";
+import image from "../../../images/junaid/clasic_me.png";
 import { useRef } from "react";
+import Section from "../../shared/Section/Section";
 
 const About = () => {
   const constraintsRef = useRef(null);
   return (
     <div className="my-10 min-h-screen">
-      <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-        className="sticky top-1 py-8"
-      >
-        <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-          About
-        </h1>
-        <hr className="md:w-28 w-16" />
+      <div className="sticky top-3">
+        <Section>ABOUT</Section>
       </div>
       <div ref={constraintsRef}>
         <div
@@ -32,13 +24,13 @@ const About = () => {
           Let’s connect and create something extraordinary together! 💻✨
         </div>
       </div>
-      <div className="md:flex mx-auto gap-12 mt-20">
-        <motion.div
-          className="w-full md:w-1/3 drop-shadow-lg"
+      <div className="md:flex mx-auto gap-10 mt-20">
+        <div
+          className="w-full md:w-2/4 drop-shadow-lg"
         >
-          <img src={image} className="rounded-full" alt="" />
-        </motion.div>
-        <div className="w-full md:w-2/3 md:mt-16 my-10">
+          <img src={image} className="rounded-full h-80 lg:ml-28 items-end" alt="" />
+        </div>
+        <div className="w-full md:w-2/4 md:mt-16 my-10">
           <h1 className="text-2xl font-semibold text-[#be94f9]">
             Junaid's Overview
           </h1>

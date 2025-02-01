@@ -4,6 +4,7 @@ import ProjectImage from "../../../data/ProjectsImage";
 import toast from "react-hot-toast";
 
 import { CgCloseR } from "react-icons/cg";
+import Section from "../../shared/Section/Section";
 
 export default function Galley() {
   const notify = () =>
@@ -13,15 +14,9 @@ export default function Galley() {
   return (
     <div>
       <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-        className="sticky top-3 py-5"
+        className="sticky top-3"
       >
-        <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-          Gallery
-        </h1>
-        <hr className="md:w-28 w-16" />
+        <Section>PREVIOUS PROJECTS</Section>
       </div>
       <div className="my-28">
         <ResponsiveMasonry columnsCountBreakPoints={{ 300: 1, 500: 2, 900: 3 }}>

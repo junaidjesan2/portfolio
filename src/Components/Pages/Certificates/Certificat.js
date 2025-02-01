@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import CertificateImages from "../../../data/CertificateImage";
 import Slider from "react-slick";
 import { CgCloseR } from "react-icons/cg";
+import Section from "../../shared/Section/Section";
 
 export default function Certicat() {
   // const settings = {
@@ -25,15 +26,9 @@ export default function Certicat() {
   return (
     <div>
       <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-        className="sticky top-3 py-5"
+        className="sticky top-3"
       >
-        <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-          Certificates
-        </h1>
-        <hr className="md:w-28 w-16" />
+        <Section>CERTIFICATS</Section>
       </div>
       <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
         <Slider {...settings}>

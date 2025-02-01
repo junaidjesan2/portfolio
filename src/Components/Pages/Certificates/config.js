@@ -1,1 +1,0 @@
-export const baseUrl = "/img/react-slick";

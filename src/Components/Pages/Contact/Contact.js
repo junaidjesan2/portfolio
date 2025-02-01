@@ -2,21 +2,16 @@ import React, { useRef } from "react";
 import { toast } from "react-hot-toast";
 import cover from "../../../images/cover/contact.png";
 import emailjs from "@emailjs/browser";
+import Section from "../../shared/Section/Section";
 
 const Contact = () => {
   return (
     <>
       <div className="min-h-screen my-5">
         <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          className="sticky top-3 py-5"
+          className="sticky top-3"
         >
-          <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-            Contact
-          </h1>
-          <hr className="md:w-28 w-16" />
+          <Section>CONTACT</Section>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 my-10 md:mt-32">
           <Email />

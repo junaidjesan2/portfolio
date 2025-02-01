@@ -22,20 +22,15 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
+import Section from "../../shared/Section/Section";
 
 const Services = () => {
   return (
-    <div className="  my-20">
+    <div>
       <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-        className=" sticky top-3 py-5"
+        className=" sticky top-3"
       >
-        <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-          Services
-        </h1>
-        <hr className="md:w-28 w-16" />
+        <Section>SERVICES</Section>
       </div>
       <div className="w-1/2 mx-auto">
         <div className=" grid grid-cols-1 gap-6 items-start">
