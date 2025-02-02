@@ -11,6 +11,21 @@ export default function Galley() {
     toast("Work in progress. Stay with me for better experience", {
       duration: 1500,
     });
+
+  const [visibleImages, setVisibleImages] = useState(5); // Number of images to show initially
+  const imagesPerLoad = 5; // Number of images to load each time
+
+  // Function to handle "Load More" button click
+  const handleLoadMore = () => {
+    setVisibleImages((prevVisibleImages) => prevVisibleImages + imagesPerLoad);
+  };
+
+  // Slice the data to show only the visible images
+  const displayedImages = ProjectImage.slice(0, visibleImages);
+
+  const restOfImages = visibleImages >= ProjectImage.length;
+  console.log(visibleImages, ProjectImage)
+  const x = `${restOfImages && 'cursor-not-allowed'} bg-[#be94f9] hover:text-gray-900 hover:drop-shadow-xl text-gray-100 px-4 py-1 my-5 w-2/5 rounded-md font-semibold`
   return (
     <div>
       <div
@@ -21,7 +36,7 @@ export default function Galley() {
       <div className="my-28">
         <ResponsiveMasonry columnsCountBreakPoints={{ 300: 1, 500: 2, 900: 3 }}>
           <Masonry columnsCount={3} gutter="10px">
-            {ProjectImage.map((image, index) => (
+            {displayedImages.map((image, index) => (
               <li data-aos="fade-up" // Animation type
                 data-aos-delay={index * 100}>
                 <ShowImage image={image} key={image.id}></ShowImage>
@@ -29,16 +44,17 @@ export default function Galley() {
             ))}
           </Masonry>
         </ResponsiveMasonry>
-        <div>
+        <div
+        >
           <button
-            className=" bg-[#be94f9] px-4 py-1 my-5 w-2/5 rounded-md font-semibold"
-            onClick={notify}
+            className={x}
+            onClick={handleLoadMore}
           >
-            Load More images
+            {restOfImages ? 'No More Images To Ioad' : 'Load More'}
           </button>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

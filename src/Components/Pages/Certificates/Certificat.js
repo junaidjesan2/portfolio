@@ -7,18 +7,11 @@ import { CgCloseR } from "react-icons/cg";
 import Section from "../../shared/Section/Section";
 
 export default function Certicat() {
-  // const settings = {
-  //     className: "",
-  //     dots: true,
-  //     infinite: true,
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     adaptiveHeight: true,
-  //   };
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
+    dots:true,
     centerPadding: "60px",
     slidesToShow: 1,
     speed: 500
@@ -54,7 +47,6 @@ export default function Certicat() {
 
 const ShowImage = (data) => {
   const [openImage, setOpenImage] = useState(false);
-  console.log(data.data.src)
   return (
     <div className="my-auto" >
       <img src={data.data.src} className="rounded-lg" onClick={() => setOpenImage(true)} />

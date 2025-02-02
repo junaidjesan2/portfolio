@@ -15,7 +15,6 @@ import cover from "../../../images/cover//mit.png";
 const Home = () => {
   const [projectsData, setProjectsData] = useState([]);
   const settings = {
-    className: "",
     dots: true,
     infinite: true,
     slidesToShow: 1,
