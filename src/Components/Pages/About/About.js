@@ -28,7 +28,7 @@ const About = () => {
         <div
           className="w-full md:w-2/4 drop-shadow-lg"
         >
-          <img src={image} className="rounded-full h-80 lg:ml-28 items-end" alt="" />
+          <img src={image} className="rounded-full border-b-4 border-cyan-400 hover:border-cyan-100 h-80 lg:ml-28 items-end" alt="" />
         </div>
         <div className="w-full md:w-2/4 md:mt-16 my-10">
           <h1 className="text-2xl font-semibold text-[#be94f9]">
