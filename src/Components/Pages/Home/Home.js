@@ -10,7 +10,7 @@ import { MdLiveTv } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
 import axios from "axios";
 
-import cover from "../../../images/cover/javascript-home-cover.png";
+import cover from "../../../images/cover//mit.png";
 
 const Home = () => {
   const [projectsData, setProjectsData] = useState([]);
@@ -83,7 +83,7 @@ const Home = () => {
             </div>
           </div>
           <div data-aos="zoom-in-left" data-aos-duration="1000" className="w-1/2 mt-10 md:mt-0">
-            <img src={cover} />
+            <img src={cover} className="drop-shadow-2xl" />
           </div>
         </div>
         <div className="relative py-1 mt-24 ">
