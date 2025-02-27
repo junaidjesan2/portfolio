@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import toast from "react-hot-toast";
 import CertificateImages from "../../../data/CertificateImage";
 import Slider from "react-slick";
-import { CgCloseR } from "react-icons/cg";
 import Section from "../../shared/Section/Section";
 
 export default function Certicat() {

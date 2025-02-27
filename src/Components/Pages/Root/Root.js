@@ -7,6 +7,7 @@ import Footer from "../../shared/Footer/Footer";
 import Gallery from "../Gallery/Gallery";
 import Study from "../Study/study";
 import Certificat from "../Certificates/Certificat";
+import Experiences from "../Experience/Experiences";
 
 export default function Root() {
   return (
@@ -16,6 +17,7 @@ export default function Root() {
       <About></About>
       <Study></Study>
       <Certificat></Certificat>
+      <Experiences></Experiences>
       <Contact></Contact>
       <Gallery></Gallery>
       <Footer></Footer>

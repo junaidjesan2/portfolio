@@ -1,6 +1,6 @@
 import React from "react";
 import { BsDownload } from "react-icons/bs";
-import resume from "../../../images/resume/Resume-Junaid_Ahamed_Jesan .pdf";
+import resume from "../../../images/resume/Resume-Junaid_Ahamed_Jesan.pdf";
 import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
