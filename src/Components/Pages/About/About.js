@@ -34,33 +34,6 @@ const About = () => {
           <h1 className="text-2xl font-semibold text-[#be94f9]">
             Junaid's Overview
           </h1>
-          {/* <div className="md:flex text-start gap-10 justify-evenly md:mt-5 mt-3">
-            <div className="md:space-y-6 space-y-2">
-              <h1 data-aos="zoom-out-up" data-aos-duration="500">
-                <strong>Name:</strong> Junaid Ahamed Jesan
-              </h1>
-              <h1 data-aos="zoom-out-up" data-aos-duration="100">
-                <strong>Phone:</strong> +880 1845338379
-              </h1>
-              <h1 data-aos="zoom-out-up" data-aos-duration="1500">
-                <strong>E-mail:</strong> junaidjesan2@gmail.com
-              </h1>
-              <h1 data-aos="zoom-out-up" data-aos-duration="2000">
-                <strong>City:</strong> Narayanganj, Dhaka, Bangladesh
-              </h1>
-            </div>
-            <div className="md:space-y-6 space-y-2">
-              <h1 data-aos="zoom-out-up" data-aos-duration="1500">
-                <strong>DOB :</strong> 7th December 2002
-              </h1>
-              <h1 data-aos="zoom-out-up" data-aos-duration="1500">
-                <strong>Degree:</strong> ...
-              </h1>
-              <h1 data-aos="zoom-out-up" data-aos-duration="1500">
-                <strong>Freelance:</strong> Available
-              </h1>
-            </div>
-          </div> */}
           <div className="md:flex text-start gap-10 justify-evenly md:mt-5 mt-3">
             {/* Left Column - Personal Identity */}
             <div className="md:space-y-6 space-y-2 flex-1">

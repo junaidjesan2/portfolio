@@ -1,0 +1,34 @@
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to elements with the class `animate-fade-in-up` */
+  .animate-fade-in-up {
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* Delay animations for staggered effect */
+  .course-item:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .course-item:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .course-item:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .course-item:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .course-item:nth-child(5) {
+    animation-delay: 1s;
+  }

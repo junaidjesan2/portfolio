@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../../images/resume/Resume-Junaid_Ahamed_Jesan.pdf'
+import image from '../../../images/resume/junaid_europass_cv.pdf'
 
 const Resume = () => {
     return (

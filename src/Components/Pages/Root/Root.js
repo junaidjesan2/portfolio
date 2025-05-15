@@ -19,7 +19,7 @@ export default function Root() {
       <Certificat></Certificat>
       <Experiences></Experiences>
       <Contact></Contact>
-      <Gallery></Gallery>
+      {/* <Gallery></Gallery> */}
       <Footer></Footer>
     </div>
   );
