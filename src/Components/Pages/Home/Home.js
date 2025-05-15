@@ -97,6 +97,7 @@ const Home = () => {
             <Slider {...settings}>
               {projectsData.map((data) => (
                 <>
+                  {console.log(data)}
                   <div
                     data-aos="fade-left"
                     className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] hover:border-[#8d5fcf] rounded-lg"
@@ -106,13 +107,19 @@ const Home = () => {
                         {data.name}
                       </p>
                       <div className="flex justify-around gap-3 items-center mt-5 ">
-                        <a href={data.github}>
-                          <FaGithubAlt />
-                        </a>
-                        {data.liveLink != "" && (
-                          <a href={data.liveLink}>
-                            <MdLiveTv />
+                        <div className="tooltip tooltip-bottom tooltip-secondary"
+                          data-tip="Github Link">
+                          <a href={data.github}>
+                            <FaGithubAlt />
                           </a>
+                        </div>
+                        {data.liveLink != "" && (
+                          <div className="tooltip tooltip-bottom tooltip-secondary"
+                            data-tip="Click to see live">
+                            <a href={data.liveLink}>
+                              <MdLiveTv />
+                            </a>
+                          </div>
                         )}
                       </div>
                     </div>
