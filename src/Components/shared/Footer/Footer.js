@@ -4,9 +4,9 @@ import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer >
-      <div className="footer py-6 border-t-[1px] flex flex-col md:flex-row items-center justify-between">
+      <div className="foote px-2 py-4 border-t-[1px] flex flex-col md:flex-row items-center justify-between">
         <div>
-          <h1 className="text-2xl">junaidjesan2@gmail.com</h1>
+          <h1 className="text-xl">junaidjesan2@gmail.com</h1>
         </div>
         <div>
           <ul className="grid grid-flow-col gap-7">
@@ -33,12 +33,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="py-2 border-t-[1px] flex flex-col md:flex-row items-center justify-between ">
+      <div className="py-2 px-2 border-t-[1px] flex flex-col md:flex-row items-center justify-between ">
         <div>
           <h1 className="text-xs">Copyright © 2025 junaidjesan</h1>
         </div>
         <div>
-          <h1 className="text-xs">v 2.2</h1>
+          <h1 className="text-xs">v 2.2.1</h1>
         </div>
       </div>
       

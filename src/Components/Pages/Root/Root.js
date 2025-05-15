@@ -20,7 +20,7 @@ export default function Root() {
       <Experiences></Experiences>
       <Contact></Contact>
       {/* <Gallery></Gallery> */}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }
