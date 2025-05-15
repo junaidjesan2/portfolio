@@ -24,12 +24,26 @@ const About = () => {
           Let’s connect and create something extraordinary together! 💻✨
         </div>
       </div>
-      <div className="md:flex mx-auto gap-10 mt-20">
+      <div className="md:flex mx-auto gap-10 mt-20 aligcn-middle justify-center">
         <div
           className="w-full md:w-2/4 drop-shadow-lg"
         >
           <img src={image} className="rounded-full border-b-4 border-cyan-400 hover:border-cyan-100 h-80 lg:ml-28 items-end" alt="" />
+          <div>
+            <h1 className="text-xl font-semibold text-[#be94f9] text-center mt-5">
+              Junaid Ahamed Jesan
+            </h1>
+            <h1 className="text-lg font-semibold text-[#be94f9] text-center">
+              Country Manager (Bangladesh)
+            </h1>
+            <a
+              href="https://flyawayinternational.com/"
+              className="text-lg font-semibold text-[#be94f9] text-center underline">
+              Fly Away International
+            </a>
+          </div>
         </div>
+
         <div className="w-full md:w-2/4 md:mt-16 my-10">
           <h1 className="text-2xl font-semibold text-[#be94f9]">
             Junaid's Overview
