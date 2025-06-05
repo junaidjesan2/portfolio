@@ -4,7 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaGithubAlt } from "react-icons/fa";
-import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FiFacebook, FiGithub, FiInstagram, FiLinkedin, FiShare } from "react-icons/fi";
+import {faUpRig} from "react-icons/fa"
 
 import { MdLiveTv } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
@@ -78,6 +79,14 @@ const Home = () => {
                     <FiInstagram className="h-6 w-6" />
                   </a>
                 </li>
+              </ul>
+              
+            </div>
+            <div  className="lg:w-3/5 mt-7 lg:ml-32">
+              <ul className=" flex items-center justify-between gap-4">
+                <a className="hover:text-gray-200 items-center flex gap-1" href="https://codeforces.com/profile/junaidjesan"> <FiShare/> CodeForces</a>
+                <a className="hover:text-gray-200 items-center flex gap-1" href="https://www.hackerrank.com/profile/junaidjesan2"> <FiShare/> HackerRank</a>
+                <a className="hover:text-gray-200 items-center flex gap-1" href="https://leetcode.com/u/junaidjesan2/"> <FiShare/> Leetcode</a>
               </ul>
             </div>
           </div>
