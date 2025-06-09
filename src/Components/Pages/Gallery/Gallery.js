@@ -24,7 +24,6 @@ export default function Galley() {
   const displayedImages = ProjectImage.slice(0, visibleImages);
 
   const restOfImages = visibleImages >= ProjectImage.length;
-  console.log(visibleImages, ProjectImage)
   const x = `${restOfImages && 'cursor-not-allowed'} bg-[#be94f9] hover:text-gray-900 hover:drop-shadow-xl text-gray-100 px-4 py-1 my-5 w-2/5 rounded-md font-semibold`
   return (
     <div>

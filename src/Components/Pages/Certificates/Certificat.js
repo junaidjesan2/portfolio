@@ -3,57 +3,66 @@ import CertificateImages from "../../../data/CertificateImage";
 import Slider from "react-slick";
 import Section from "../../shared/Section/Section";
 
-export default function Certicat() {
+export default function Certificat() {
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
-    dots:true,
+    dots: true,
     centerPadding: "60px",
     slidesToShow: 1,
-    speed: 500
+    speed: 500,
   };
+
   return (
     <div>
-      <div
-        className="sticky top-3"
-      >
-        <Section>CERTIFICATS</Section>
+      {/* Section Heading */}
+      <div className="sticky top-3">
+        <Section>CERTIFICATES</Section>
       </div>
-      <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
-        <Slider {...settings}>
-          {CertificateImages.map((data) => (
-            <>
+
+      {/* Slider */}
+      <div className="slider-container w-full mx-auto mt-14 md:my-20">
+        <div className="w-6/12 mx-auto">
+          <Slider {...settings}>
+            {CertificateImages.map((data) => (
               <div
+                key={data.id}
                 data-aos="fade-left"
-                className="drop-shadow-md md:mb-3 border-2 border-[#be94f9] hover:border-[#8d5fcf] rounded-lg m-6"
+                className="flex justify-around gap-3 items-center h-auto rounded-lg p-3"
               >
-                <div key={data.id}>
-                  <div className="flex justify-around gap-3 items-center rounded-lg p-3">
-                    <ShowImage data={data} key={data.id}></ShowImage>
-                  </div>
-                </div>
+                <ShowImage data={data} />
               </div>
-            </>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
 }
 
-const ShowImage = (data) => {
+// ShowImage Component
+const ShowImage = ({ data }) => {
   const [openImage, setOpenImage] = useState(false);
-  return (
-    <div className="my-auto" >
-      <img src={data.data.src} className="rounded-lg" onClick={() => setOpenImage(true)} />
 
+  return (
+    <div className="my-auto">
+      {/* Thumbnail Image */}
+      <img
+        src={data.src}
+        className="rounded-lg cursor-pointer"
+        onClick={() => setOpenImage(true)}
+        alt=""
+      />
+
+      {/* Fullscreen Modal */}
       {openImage && (
-        <div className="fixed inset-0 bg-opacity-25 backdrop-blur-sm flex items-center justify-center" onClick={() => setOpenImage(false)}>
-          <div className="bg-white h-12/12 bg-opacity-0 p-2 rounded  mx-auto">
-            <div className="h-12/12 w-full mx-auto">
-              <img src={data.data.src} className="rounded-lg" />
-            </div>
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center"
+          onClick={() => setOpenImage(false)}
+        >
+          <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full">
+            <img src={data.src} className="rounded-lg w-full h-auto" alt="" />
           </div>
         </div>
       )}

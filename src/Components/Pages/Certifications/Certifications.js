@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import toast from "react-hot-toast";
 
 import { CgCloseR } from "react-icons/cg";
 import Certificate from "../../../data/Certificates";
@@ -15,58 +13,30 @@ export default function Certications() {
     slidesToScroll: 1,
     adaptiveHeight: true,
   };
-  // const notify = () =>
-  //   toast("Work in progress. Stay with me for better experience", {
-  //     duration: 1500,
-  //   });
+
   return (
-    // <div>
-    //   <div
-    //     data-aos="fade-down"
-    //     data-aos-easing="linear"
-    //     data-aos-duration="1500"
-    //     className="sticky top-3 py-5"
-    //   >
-    //     <h1 className="md:text-3xl text-[#be94f9] text-xl flex gap-3 items-center text-start font-semibold">
-    //       Gallery
-    //     </h1>
-    //     <hr className="md:w-28 w-16" />
-    //   </div>
-    //   <div className="my-28">
-    //     <ResponsiveMasonry columnsCountBreakPoints={{ 300: 1, 500: 2, 900: 3 }}>
-    //       <Masonry columnsCount={3} gutter="10px">
-    //         {CerticateImage.map((image, index) => (
-    //           <li data-aos="fade-up" // Animation type
-    //             data-aos-delay={index * 100}>
-    //             <ShowImage image={image} key={image.id}></ShowImage>
-    //           </li>
-    //         ))}
-    //       </Masonry>
-    //     </ResponsiveMasonry>
-    //   </div>
-    // </div>
     <div className="slider-container md:w-2/4 w-full mx-auto mt-14 md:my-20">
-            <Slider {...settings}>
-              {Certificate.map((data) => (
-                <>
-                {console.log(data)}
-                  <div
-                    data-aos="fade-left"
-                    className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg"
-                  >
-                    <div key={data.id}>
-                      <p className="md:text-2xl text-lg font-semibold text-center align-middle">
-                        {data.name}
-                      </p>
-                      <div className="flex justify-around gap-3 items-center mt-5 ">
-                        
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </Slider>
-          </div>
+      <Slider {...settings}>
+        {Certificate.map((data) => (
+          <>
+            <div
+              data-aos="fade-left"
+              className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] rounded-lg"
+              >
+              
+              <div key={data.id}>
+                <p className="md:text-2xl text-lg font-semibold text-center align-middle">
+                  {data.name}
+                </p>
+                <div className="flex justify-around gap-3 items-center mt-5 ">
+
+                </div>
+              </div>
+            </div>
+          </>
+        ))}
+      </Slider>
+    </div>
   );
 }
 

@@ -30,7 +30,6 @@ const Home = () => {
         setProjectsData(response.data);
       })
       .catch(function (error) {
-        console.log(error);
       });
   }, [projectsData]);
   return (
@@ -47,7 +46,7 @@ const Home = () => {
             </h1>
             <div className="lg:w-1/5 mt-7 lg:ml-32">
               <ul className=" flex items-center justify-between gap-4">
-                <li className="">
+                <li className="hover:text-gray-400">
                   <a
                     href="https://github.com/junaidjesan2"
                     className="flex flex-col items-center space-y-5"
@@ -55,7 +54,7 @@ const Home = () => {
                     <FiGithub className="h-6 w-6" />
                   </a>
                 </li>
-                <li>
+                <li className="hover:text-gray-400">
                   <a
                     href="https://www.linkedin.com/in/junaidjesan2/"
                     className="flex flex-col items-center space-y-5"
@@ -63,7 +62,7 @@ const Home = () => {
                     <FiLinkedin className="h-6 w-6" />
                   </a>
                 </li>
-                <li>
+                <li className="hover:text-gray-400">
                   <a
                     href="https://www.facebook.com/junaidjesan2"
                     className="flex flex-col items-center space-y-5"
@@ -71,7 +70,7 @@ const Home = () => {
                     <FiFacebook className="h-6 w-6" />
                   </a>
                 </li>
-                <li>
+                <li className="hover:text-gray-400">
                   <a
                     href="https://www.instagram.com/junaidjesan2"
                     className="flex flex-col items-center space-y-5"
@@ -84,9 +83,9 @@ const Home = () => {
             </div>
             <div  className="lg:w-3/5 mt-7 lg:ml-32">
               <ul className=" flex items-center justify-between gap-4">
-                <a className="hover:text-gray-200 items-center flex gap-1" href="https://codeforces.com/profile/junaidjesan"> <FiShare/> CodeForces</a>
-                <a className="hover:text-gray-200 items-center flex gap-1" href="https://www.hackerrank.com/profile/junaidjesan2"> <FiShare/> HackerRank</a>
-                <a className="hover:text-gray-200 items-center flex gap-1" href="https://leetcode.com/u/junaidjesan2/"> <FiShare/> Leetcode</a>
+                <a className="hover:text-gray-400 items-center flex gap-1" href="https://codeforces.com/profile/junaidjesan"> <FiShare/> CodeForces</a>
+                <a className="hover:text-gray-400 items-center flex gap-1" href="https://www.hackerrank.com/profile/junaidjesan2"> <FiShare/> HackerRank</a>
+                <a className="hover:text-gray-400 items-center flex gap-1" href="https://leetcode.com/u/junaidjesan2/"> <FiShare/> Leetcode</a>
               </ul>
             </div>
           </div>
@@ -106,7 +105,6 @@ const Home = () => {
             <Slider {...settings}>
               {projectsData.map((data) => (
                 <>
-                  {console.log(data)}
                   <div
                     data-aos="fade-left"
                     className="drop-shadow-md py-5 md:mb-3 border-2 border-[#be94f9] hover:border-[#8d5fcf] rounded-lg"

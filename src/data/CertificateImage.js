@@ -7,7 +7,8 @@ import p113 from "../images/certificates/a2.jpg";
 import p114 from "../images/certificates/data-science-with-python.jpg";
 import p115 from "../images/certificates/HG1.jpg";
 import p116 from "../images/certificates/HG2.jpg";
-import p117 from "../images/certificates/seip.jpg";
+// import p117 from "../images/certificates/seip.jpg";
+import p118 from "../images/certificates/hr_&_negociation_skill.jpeg";
 
 
 const CertificateImage = [
@@ -19,7 +20,8 @@ const CertificateImage = [
   { id: 114, src: p114 },
   { id: 115, src: p119 },
   { id: 116, src: p116 },
-  { id: 117, src: p117 },
+  // { id: 117, src: p117 },
   { id: 118, src: p115 },
+  { id: 118, src: p118 },
 ];
 export default CertificateImage;
