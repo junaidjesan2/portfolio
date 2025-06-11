@@ -82,7 +82,7 @@ const Home = () => {
               
             </div>
             <div  className="lg:w-3/5 mt-7 lg:ml-32">
-              <ul className=" flex items-center justify-between gap-4">
+              <ul className=" flex md:items-center flex-col md:flex-row justify-between gap-4">
                 <a className="hover:text-gray-400 items-center flex gap-1" href="https://codeforces.com/profile/junaidjesan"> <FiShare/> CodeForces</a>
                 <a className="hover:text-gray-400 items-center flex gap-1" href="https://www.hackerrank.com/profile/junaidjesan2"> <FiShare/> HackerRank</a>
                 <a className="hover:text-gray-400 items-center flex gap-1" href="https://leetcode.com/u/junaidjesan2/"> <FiShare/> Leetcode</a>
